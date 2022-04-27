@@ -1,0 +1,14 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: ran-operators
+  namespace: openshift-marketplace
+spec:
+  displayName: RAN Operators
+  image: quay.io/vgrinber/ran-catalog:latest 
+  priority: -400
+  publisher: Red Hat
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 10m0s

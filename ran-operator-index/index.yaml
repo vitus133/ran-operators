@@ -24,7 +24,6 @@ package: cluster-group-upgrades-operator
 name: preview
 entries:
   - name: cluster-group-upgrades-operator.v4.11.0
-cat << EOF >> ran-operator-index/index.yaml 
 ---
 schema: olm.channel
 package: hw-event-proxy-operator
